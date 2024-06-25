@@ -1,10 +1,21 @@
 import './App.css'
+import About from './component/About'
+import Contact from './component/Contact'
+import Home from './component/Home'
+import Navbar from './component/Navbar'
+import Skill from './component/Skill'
+import Footer from './component/Footer'
 
 function App() {
 
   return (
     <>
-    <h1 className=' text-neutral-950 font-bold text-center text-2xl'>Hello world</h1>
+    <Navbar/>
+    <Home/>
+    <About/>
+    <Skill/>
+    <Contact/>
+    <Footer/>
     </>
   )
 }
