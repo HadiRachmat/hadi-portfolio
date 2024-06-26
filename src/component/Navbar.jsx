@@ -12,8 +12,8 @@ export default function Navbar() {
               <button type="button" className="m-5"><Link to="#Home" smooth={true} className="p-5 px-2 text-white hover:bg-[#DBAFA0] duration-200 rounded-full">Home</Link></button>
               <button type="button" className="m-5"><Link to="#About" smooth={true} className="p-5 px-2 text-white hover:bg-[#DBAFA0] duration-200 rounded-full">About</Link></button>
               <button type="button" className="m-5"><Link to="#Skill" smooth={true} className="p-5 px-4 text-white hover:bg-[#DBAFA0] duration-200 rounded-full">Skill</Link></button>
-              <button type="button" className="m-5"><Link to="#Contact" smooth={true} className="p-5 px-1 text-white hover:bg-[#DBAFA0] duration-200 rounded-full">Contact</Link></button>
-              <button type="button" className="m-5"><Link to="#Footer" smooth={true} className="p-5 px-2 text-white hover:bg-[#DBAFA0] duration-200 rounded-full">Footer</Link></button>
+              <button type="button" className="m-5"><Link to="#Contact" smooth={true} className="p-5 px-0 text-white hover:bg-[#DBAFA0] duration-200 rounded-full">Contact</Link></button>
+              <button type="button" className="m-5"><Link to="#Footer" smooth={true} className="p-5 px-1 text-white hover:bg-[#DBAFA0] duration-200 rounded-full">Footer</Link></button>
             </ul>
           </nav>
         </div>

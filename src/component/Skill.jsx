@@ -4,8 +4,8 @@ import { Element } from "react-scroll";
 export default function Skill() {
   return (
     <>
-      <Element name="#Skill">
-        <div className=" h-screen bg-sky-700">
+      <Element name="#Skill" className="h-screen">
+        <div className="pt-10">
           <div>Skill Section</div>
         </div>
       </Element>
