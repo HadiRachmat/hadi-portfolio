@@ -10,9 +10,9 @@ import { Link } from "react-scroll";
 export default function Home() {
   return (
     <>
-      <Element name="#Home" className="sm:h-screen sm:mb-2 mb-10">
+      <Element name="#Home" className="sm:h-screen pt-28" >
         <div className="sm:grid sm:grid-cols-2  ">
-          <div className=" sm:text-left text-center mt-32 sm:my-auto mx-auto sm:mx-24">
+          <div className=" sm:text-left text-center sm:my-auto mx-auto sm:mx-24">
             <p>Hola, I`m as </p>
             <h5 className="text-4xl font-sans">Expert of </h5>
             <h1 className="text-5xl font-bold font-serif text-[#49243e]">

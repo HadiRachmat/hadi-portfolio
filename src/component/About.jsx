@@ -3,11 +3,11 @@ import "../App.css";
 import AboutPicture from "../assets/img/about-picture.jpeg";
 export default function About() {
   return (
-    <>
-      <Element name="#About" className="h-screen sm:my-0 my-40">
-        <h5 className=" mt-5 sm:pt-20 pb-10 text-center text-[80px] font-mono">
+    <> 
+      <Element name="#About" className="h-screen sm:my-0 mb-20 pt-20">
+        <h5 className=" sm:pt-20 pb-10 text-center text-[80px] font-serif">
           {" "}
-          about me
+          About Me
           <span>
             {" "}
             <hr className=" w-52 bg-black h-1 mx-auto" />
@@ -22,7 +22,7 @@ export default function About() {
               className="mx-auto object-cover object-top sm:w-[400px] sm:h-[400px] w-[200px] h-[200px] rounded-full"
             />
           </div>
-          <div className="my-auto">
+          <div className="my-auto text-center">
             <h3 className="text-3xl font-serif"> Hadi Rachmat S </h3>
             <p className="py-5">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat

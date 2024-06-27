@@ -4,7 +4,7 @@ import { Element } from "react-scroll";
 export default function Skill() {
   return (
     <>
-      <Element name="#Skill" className="h-screen pt-20">
+      <Element name="#Skill" className="h-screen pt-20 mb-10">
         <div className="">
           <div className="text-center text-[100px] font-serif">
             <h1> My Skill </h1>
