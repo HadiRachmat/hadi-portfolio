@@ -4,9 +4,9 @@ import { Element } from "react-scroll";
 export default function Skill() {
   return (
     <>
-      <Element name="#Skill" className="h-screen pt-20 mb-10">
+      <Element name="#Skill" className="h-screen pt-20 mb-10 sm:mb-0">
         <div className="">
-          <div className="text-center text-[100px] font-serif">
+          <div className="text-center text-[90px] font-serif">
             <h1> My Skill </h1>
           </div>
           <div className="grid grid-rows-2 sm:grid sm:grid-cols-2">
@@ -28,10 +28,10 @@ export default function Skill() {
                   <h3 htmlFor="Html" className=" font-semibold">
                     JavaSript
                   </h3>
-                  <span className=" font-semibold"> 85% </span>
+                  <span className=" font-semibold"> 80% </span>
                 </div>
                 <div className="flex w-full h-3 bg-gray-900 rounded-full">
-                  <div className=" flex bg-sky-600 w-[85%] rounded-full"></div>
+                  <div className=" flex bg-sky-600 w-[80%] rounded-full"></div>
                 </div>
                 {/* end-javascript  */}
                 {/* reactjs */}
@@ -39,10 +39,10 @@ export default function Skill() {
                   <h3 htmlFor="Html" className=" font-semibold">
                     React JS
                   </h3>
-                  <span className=" font-semibold"> 85% </span>
+                  <span className=" font-semibold"> 75% </span>
                 </div>
                 <div className="flex w-full h-3 bg-gray-900 rounded-full">
-                  <div className=" flex bg-sky-600 w-[85%] rounded-full"></div>
+                  <div className=" flex bg-sky-600 w-[75%] rounded-full"></div>
                 </div>
                 {/* end-reactjs */}
                 {/* Node JS */}
@@ -50,10 +50,10 @@ export default function Skill() {
                   <h3 htmlFor="Html" className=" font-semibold">
                     Node JS
                   </h3>
-                  <span className=" font-semibold"> 85% </span>
+                  <span className=" font-semibold"> 60% </span>
                 </div>
                 <div className="flex w-full h-3 bg-gray-900 rounded-full">
-                  <div className=" flex bg-sky-600 w-[85%] rounded-full"></div>
+                  <div className=" flex bg-sky-600 w-[60%] rounded-full"></div>
                 </div>
                 {/* end-NodeJS */}
               </div>
@@ -76,10 +76,10 @@ export default function Skill() {
                   <h3 htmlFor="Html" className=" font-semibold">
                     English
                   </h3>
-                  <span className=" font-semibold"> 85% </span>
+                  <span className=" font-semibold"> 70% </span>
                 </div>
                 <div className="flex w-full h-3 bg-gray-900 rounded-full">
-                  <div className=" flex bg-sky-600 w-[85%] rounded-full"></div>
+                  <div className=" flex bg-sky-600 w-[70%] rounded-full"></div>
                 </div>
                 {/* end-english-langguage */}
                 {/* english langguage */}
@@ -87,10 +87,10 @@ export default function Skill() {
                   <h3 htmlFor="Html" className=" font-semibold">
                     Arabic
                   </h3>
-                  <span className=" font-semibold"> 85% </span>
+                  <span className=" font-semibold"> 50% </span>
                 </div>
                 <div className="flex w-full h-3 bg-gray-900 rounded-full">
-                  <div className=" flex bg-sky-600 w-[85%] rounded-full"></div>
+                  <div className=" flex bg-sky-600 w-[50%] rounded-full"></div>
                 </div>
                 {/* end-english-langguage */}
                 {/* english langguage */}
@@ -107,7 +107,7 @@ export default function Skill() {
               </div>
             </div>
           </div>
-          <h1 className="text-[400px] relative -top-[300px] sm:-top-[450px] -z-10 opacity-20"> 03 </h1>
+          <h1 className="sm:text-[500px] text-[350px] relative -top-[300px] sm:-top-[600px] -z-10 opacity-20 right-2 sm:right-0"> 03 </h1>
         </div>
       </Element>
     </>

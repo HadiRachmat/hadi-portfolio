@@ -4,7 +4,7 @@ import AboutPicture from "../assets/img/about-picture.jpeg";
 export default function About() {
   return (
     <> 
-      <Element name="#About" className="h-screen sm:my-0 mb-20 pt-20">
+      <Element name="#About" className="h-screen sm:my-0 mb-20 sm:mb-0 pt-20 sm:pt-0">
         <h5 className=" sm:pt-20 pb-10 text-center text-[80px] font-serif">
           {" "}
           About Me
@@ -19,10 +19,10 @@ export default function About() {
               src={AboutPicture}
               alt="picture"
               srcSet=""
-              className="mx-auto object-cover object-top sm:w-[400px] sm:h-[400px] w-[200px] h-[200px] rounded-full"
+              className="mx-auto object-cover object-top sm:w-[350px] sm:h-[350px] mb-10 w-[200px] h-[200px] rounded-full"
             />
           </div>
-          <div className="my-auto text-center">
+          <div className="my-auto text-center sm:text-left">
             <h3 className="text-3xl font-serif"> Hadi Rachmat S </h3>
             <p className="py-5">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
@@ -37,7 +37,7 @@ export default function About() {
               My Resume
             </button>
             <div>
-              <h1 className=" relative sm:text-[500px] text-[400px] bottom-[350px] sm:bottom-[300px] -z-10 opacity-20"> 02 </h1>
+              <h1 className=" relative sm:text-[500px] text-[350px] bottom-[350px] sm:bottom-[400px] -z-10 opacity-20 text-center right-2"> 02 </h1>
             </div>
           </div>
         </div>

@@ -8,13 +8,13 @@ export default function Contact() {
   return (
     <>
       <Element name="#Contact">
-        <div className="h-screen mb-[130%] sm:mb-[15%] pt-20">
+        <div className="h-screen mb-[130%] sm:mb-[15%] pt-24">
           <div className=" ">
-            <h1 className="text-[90px] text-center font-serif"> Contact Me</h1>
-            <div className="flex justify-center">
-              <hr className="w-20 h-0.5 bg-black"/>
-              <p> Do Anything for Me, then i can do it</p>
-              <hr className="w-20 h-0.5 bg-black"/>
+            <h1 className="text-[50px] text-center font-serif"> Contact Me</h1>
+            <div className="flex justify-center pb-3">
+              <hr className="w-16 sm:w-20 h-0.5 bg-black"/>
+              <p className="text-center"> Do Anything for Me, <br />then i can do it</p>
+              <hr className="w-16 sm:w-20 h-0.5 bg-black"/>
 
             </div>
           </div>
@@ -22,12 +22,10 @@ export default function Contact() {
             <div>
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d495.09968825577624!2d106.92146786886462!3d-6.914797457254697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6849002b3650af%3A0x9154ab53f875dcfd!2sRumahnya%20Rachmat!5e0!3m2!1sid!2sid!4v1719406215907!5m2!1sid!2sid"
-                width={450}
-                height={300}
                 allowFullScreen={true}
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                className="mx-auto"
+                className="mx-auto w-[300px] h-[300px] sm:w-[450px] sm:h-[350px]"
               ></iframe>
               <div className="">
                 <div className="flex py-2 justify-center">
@@ -94,11 +92,11 @@ export default function Contact() {
                     id=""
                     cols={30}
                     rows={10}
-                    className="border-gray-500 border-2 w-full rounded-md bg-transparent"
+                    className="border-gray-500 border-2 w-full rounded-md bg-transparent p-2.5"
                   ></textarea>
                 </div>
               </form>
-              <div className="relative">
+              <div className="relative text-center sm:text-left">
                 <button
                   type="button"
                   className="p-2.5 px-10 bg-sky-500 rounded-md mx-5"
@@ -106,7 +104,7 @@ export default function Contact() {
                   {" "}
                   Submit{" "}
                 </button>
-                <h1 className="text-[450px] absolute -bottom-[300px] -z-10 opacity-20 font-serif">04</h1>
+                <h1 className="sm:text-[500px] text-[350px] absolute -bottom-[250px] -z-10 opacity-20 font-serif right-1.5">04</h1>
               </div>
             </div>
           </div>
