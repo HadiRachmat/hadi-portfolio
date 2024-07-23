@@ -3,11 +3,33 @@ import { MdOutlineEmail } from "react-icons/md";
 import { FaGithub } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
 
+import { useState } from "react";
+import axios from "axios";
+
 import "../App.css";
 export default function Contact() {
+  const [formdata, setFormData] = useState({
+    to:"",
+    subject:"",
+    text:""
+  })
+
+  const handleEmail = (e) =>{
+    setFormData({...formdata,[e.target.name]:e.target.value})
+  }
+
+  const handleSubmitEmail = async (e) =>{
+    e.preventDefault();
+    try {
+      await axios.post('http://localhost:5000/', formdata);
+      alert('Email sent successfully!');
+    } catch (e) {
+      alert("send email is failure")
+    }
+  }
   return (
     <>
-      <Element name="#Contact">
+      <Element name="#Contact" >
         <div className="h-screen mb-[130%] sm:mb-[15%] pt-24">
           <div className=" ">
             <h1 className="text-[50px] text-center font-serif"> Contact Me</h1>
@@ -64,46 +86,53 @@ export default function Contact() {
               </div>
             </div>
             <div className="">
-              <form action="" className="px-5">
+              <form action="" className="px-5" onSubmit={handleSubmitEmail}>
                 <div className="py-2">
-                  <label htmlFor="full_name"> FUL NAME </label>
+                  <label htmlFor="full_name"> YOUR EMAIL </label>
                   <input
-                    type="text"
-                    name=""
-                    id=""
+                    type="email"
+                    name="to"
                     className="w-full h-9 border-2 border-gray-500 rounded-md p-2.5 focus:ring-blue-500 focus:ring-1 focus:border-none"
-                    placeholder="Enter Your Full Name"
+                    placeholder="Enter Your Email"
+                    value={formdata.to}
+                    onChange={handleEmail}
+                    required
                   />
                 </div>
                 <div className="py-2">
                   <label htmlFor="full_name" className="my-2"> SUBJECT </label>
                   <input
                     type="text"
-                    name=""
-                    id=""
+                    name="subject"
                     className="w-full h-9 border-2 border-gray-500 rounded-md p-2.5 focus:ring-blue-500 focus:ring-1 focus:border-none"
-                    placeholder="Enter Your Full Name"
+                    placeholder="Enter Your subject"
+                    value={formdata.subject}
+                    onChange={handleEmail}
+                    required
                   />
                 </div>
                 <div className="py-2">
                   <label htmlFor="message"> MESSAGE </label>
                   <textarea
-                    name="message"
+                    name="text"
                     id=""
                     cols={30}
                     rows={10}
                     className="border-gray-500 border-2 w-full rounded-md bg-transparent p-2.5"
+                    value={formdata.text}
+                    onChange={handleEmail}
+                    required
                   ></textarea>
                 </div>
-              </form>
-              <div className="relative text-center sm:text-left">
                 <button
-                  type="button"
+                  type="submit"
                   className="p-2.5 px-10 bg-sky-500 rounded-md mx-5"
                 >
                   {" "}
                   Submit{" "}
                 </button>
+              </form>
+              <div className="relative text-center sm:text-left">
                 <h1 className="sm:text-[500px] text-[350px] absolute -bottom-[250px] -z-10 opacity-20 font-serif right-1.5">04</h1>
               </div>
             </div>
