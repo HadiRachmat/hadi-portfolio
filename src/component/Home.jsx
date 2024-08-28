@@ -24,17 +24,14 @@ export default function Home() {
             </h1>
             <p className="py-5">
               {" "}
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam
-              exercitationem iure ducimus quisquam. Molestiae nostrum harum,
-              obcaecati sint quasi iusto quia. Earum, ex. Inventore officiis
-              mollitia aperiam. Libero, ad at.
+              Let me introduce myself, my name is Hadi Rachmat S, I am a student and freelancer in the field of informatics. and this is a simple personal website,
             </p>
             <div className="">
               <button
                 type="button"
                 className="bg-[#f2613f] p-4 px-5 mx-1 rounded-xl hover:bg-[#49243E] hover:text-[#DBAFA0] hover:duration-500 active:bg-[#f2613f] active:duration-0"
               >
-                <a href="http://">Here Me</a>
+                <a href="https://wa.me/085793710978">Here Me</a>
               </button>
               <Link to="#Contact" smooth={true}>
                 <button
